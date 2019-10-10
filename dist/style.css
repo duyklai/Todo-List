@@ -12,3 +12,222 @@ body {
 header {
     background-color: #1f1f1f;
 }
+
+header h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #FFA71A;
+    margin: 0px;
+}
+
+/* PROJECT CONTAINER AND CHILDRENS */
+#projectContainer {
+    float: left;
+    background-color: #282828;
+    width: 20%;
+    min-height: 100%;
+}
+
+#addProjectBtn {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#addProjectName {
+    margin-top: 10px;
+}
+
+#projectName {
+    float: left;
+    width: 80%;
+    margin-top: 15px;
+}
+
+#pName {
+    margin: 0;
+    color: white;
+    padding-left: 3px;
+    font-size: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.selected {
+    border-left: 6px solid #FFA71A;
+}
+
+#newProject {
+    height: 20px;
+    width: 120px;
+    color: #FFA71A;
+    font-weight: bold;
+    border: none; 
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+#deleteProjectDiv {
+    position: relative;
+    float: right;
+    margin-top: 13px;
+}
+
+#deleteProjectBtn {
+    color: #FFA71A;
+    font-size: 20px;
+    font-weight: bold;
+    border: none; 
+    background: transparent;
+    cursor: pointer;
+}
+
+/* LIST CONTAINER AND CHILDRENS */
+#listContainer {
+    float: left;
+    width: 70%;
+    color: #e6e6e6;
+    background-color: #1a1a1a;
+    min-height: 1000px;
+    padding: 0px 25px;
+}
+
+#listContainer div {
+    padding: 5px 0px;
+}
+
+#newTodo {
+    font-size: 35px;
+    color: #FFA71A;
+    font-weight: bold;
+    border: none; 
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+}
+
+#todoCheck {
+    float: left;
+}
+
+#todoBasic {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#todoAdv {
+    margin-left: 100px;
+}
+
+#todoList {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#todoItemAdv {
+    border-bottom: 1px solid gray;
+}
+
+#todoName {
+    float: left;
+    margin-bottom: 10px;
+}
+
+#todoDate {
+    float: right;
+    text-align: right;
+}
+
+#todoBasicTD {
+    width: 100%;
+}
+
+#todoEdit, #todoDelete {
+    color: #FFA71A;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+#advTable {
+    width: 100%;
+}
+
+#note {
+    float: left;
+}
+
+#config {
+    text-align: right;
+}
+
+/* Checkboxes styling */
+
+/* The container */
+#checkBoxContainer {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+}
+
+/* Hide the browser's default checkbox */
+#checkBoxContainer input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+/* Create a custom checkbox */
+#checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    border: 1px solid gray;
+    background-color: #282828;
+}
+  
+/* On mouse-over, add a grey background color */
+#checkBoxContainer:hover input ~ #checkmark {
+    background-color: gray;
+}
+
+/* When the checkbox is checked, add a blue background */
+#checkBoxContainer input:checked ~ #checkmark {
+    background-color: #FFA71A;
+}
+  
+/* Create the checkmark/indicator (hidden when not checked) */
+#checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* Show the checkmark when checked */
+#checkBoxContainer input:checked ~ #checkmark:after {
+    display: block;
+}
+  
+/* Style the checkmark/indicator */
+#checkBoxContainer #checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#priorityButton {
+    position: relative;
+    border: none;
+    background: transparent;
+    font-size: 30px;
+    padding: 0px 15px;;
+    cursor: pointer;
+}
